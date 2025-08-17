@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý hóa đơn</title>
+    <!-- Favicon  -->
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="/asset/scss/main.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <div class="container-fluid">
+        <div class="admin">
+          <div class="admin__left">
+            <!--  -->
+            <div class="block-admin">
+              <!-- <h2 class="admin-right__title">Danh mục quản lý</h2> -->
+              <ul class="admin-category">
+                <li class="admin-category__items" data-content="inputProduct">
+                  <a href="#!"
+                    ><i class="fa-solid fa-pen-to-square"></i
+                    ><span>Nhập sản phẩm</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="accountManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-user"></i
+                    ><span>Quản lý tài khoản</span></a
+                  >
+                </li>
+                <li class="admin-category__items" data-content="billManagement">
+                  <a href="#!"
+                    ><i class="fa-solid fa-money-bill"></i
+                    ><span>Quản lý hóa đơn</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="portfolioManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-layer-group"></i
+                    ><span>Quản lý danh mục</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="assessmentManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-comments"></i
+                    ><span>Quản lý đánh giá</span></a
+                  >
+                </li>
+                <li class="admin-category__items" data-content="statistical">
+                  <a href="#!"
+                    ><i class="fa-solid fa-chart-simple"></i
+                    ><span>Thống kê</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
+          <div class="admin__right">
+            <h1 class="main-title">Quản lý hóa đơn</h1>
+            <!-- block form  -->
+            <div class="form-bill">
+              <div class="form-bill__inp">
+                <input type="text" placeholder="Tìm hóa đơn" />
+              </div>
+            </div>
+            <!-- form -->
+            <div class="flex">
+              <form
+                action=""
+                class="addProduct"
+                id="inputProduct"
+                data-blockForm
+              >
+                <div class="form-group__inp">
+                  <input type="text" name="name" placeholder="Mã đơn" />
+                </div>
+                <div class="form-group__inp">
+                  <input
+                    type="text"
+                    name="priceNew"
+                    placeholder="Xem tình trạng"
+                  />
+                </div>
+                <div class="admin-formBtn">
+                  <input type="button" value="Xem" />
+                  <!-- <button type="submit">Xem</button> -->
+                  <!-- <button type="submit">Nhập lại</button> -->
+                </div>
+              </form>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script src="/asset/js/main.js"></script>
+    <script>
+      app.star = function () {
+        // this.tabAdmin();
+        this.openCategory();
+        this.renderTextInp();
+        this.search();
+      };
+      app.star();
+    </script>
+  </body>
+</html>

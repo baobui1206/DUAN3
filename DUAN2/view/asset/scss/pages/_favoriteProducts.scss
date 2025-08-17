@@ -1,0 +1,13 @@
+.love-product {
+  &__title {
+    font-size: 2.4rem;
+    font-weight: $bold-contentSemi-Bold;
+    color: $primary-Color;
+  }
+  .love-product__list {
+    margin-top: $mr-block;
+    .product {
+      margin-bottom: 24px;
+    }
+  }
+}

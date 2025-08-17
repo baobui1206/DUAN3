@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thống kê</title>
+    <!-- Favicon  -->
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="view/asset/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="view/asset/scss/main.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <div class="container-fluid">
+        <div class="admin">
+          <div class="admin__left">
+            <!--  -->
+            <div class="block-admin">
+              <!-- <h2 class="admin-right__title">Danh mục quản lý</h2> -->
+              <ul class="admin-category">
+                <li class="admin-category__items" data-content="inputProduct">
+                  <a href="#!"
+                    ><i class="fa-solid fa-pen-to-square"></i
+                    ><span>Nhập sản phẩm</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="accountManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-pen-to-square"></i
+                    ><span>Quản lý tài khoản</span></a
+                  >
+                </li>
+                <li class="admin-category__items" data-content="billManagement">
+                  <a href="#!"
+                    ><i class="fa-solid fa-money-bill"></i
+                    ><span>Quản lý hóa đơn</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="portfolioManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-layer-group"></i
+                    ><span>Quản lý danh mục</span></a
+                  >
+                </li>
+                <li
+                  class="admin-category__items"
+                  data-content="assessmentManagement"
+                >
+                  <a href="#!"
+                    ><i class="fa-solid fa-comments"></i
+                    ><span>Quản lý đánh giá</span></a
+                  >
+                </li>
+                <li class="admin-category__items" data-content="statistical">
+                  <a href="#!"
+                    ><i class="fa-solid fa-chart-simple"></i
+                    ><span>Thống kê</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
+          <div class="admin__right">
+            <h1 class="main-title">Thống kê sản phẩm</h1>
+            <!-- block form  -->
+            <!-- form -->
+            <div class="statistical">
+              <table class="statistical-table">
+                <thead class="row-title">
+                  <tr>
+                    <th class="tb-col2">Stt</th>
+                    <th class="tb-col4">Tên sản phẩm</th>
+                    <th class="tb-col2">Đơn giá</th>
+                    <th class="tb-col2">Số lượng</th>
+                    <th class="tb-col2">Thành tiền</th>
+                  </tr>
+                </thead>
+                <!-- body -->
+                <tbody>
+                  <tr class="row-content">
+                    <td class="tb-col2 col-stt">1</td>
+                    <td class="tb-col4 col-nameProduct">
+                      <span class="hoverJs"> Bưởi da tím trái trên 1.7kg</span>
+                      <div class="show-nameProduct"></div>
+                    </td>
+                    <td class="tb-col2 col-price">80.100₫</td>
+                    <td class="tb-col2 col-quantity">99</td>
+                    <td class="tb-col2 col-money">8.721.000k</td>
+                  </tr>
+                  <!--  -->
+                  <tr class="row-content">
+                    <td class="tb-col2 col-stt">2</td>
+                    <td class="tb-col4 col-nameProduct">
+                      <span class="hoverJs"
+                        >Lốc 3 gói rong biển ăn liền Ock Dong Ja Shin vị truyền
+                        thống 4.5g</span
+                      >
+                      <div class="show-nameProduct"></div>
+                    </td>
+                    <td class="tb-col2 col-price">200.000k</td>
+                    <td class="tb-col2 col-quantity">1</td>
+                    <td class="tb-col2 col-money">200.000k</td>
+                  </tr>
+                  <!--  -->
+                </tbody>
+                <!--  -->
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="col-contentSum">Tổng cộng</td>
+                    <td class="tb-col2 col-sumQuantity">330</td>
+                    <td class="tb-col2 col-sum">8.721.000k</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!--  -->
+            <div class="statistics-table">
+              <h2 class="statistics-table__title">
+                Bảng thống kê trong 1 tuần bạn Tín có thể cua được gái không
+              </h2>
+              <div class="statistics-column">
+                <div style="--column: 20%" class="column"></div>
+                <div style="--column: 40%" class="column"></div>
+                <div style="--column: 62%" class="column"></div>
+                <div style="--column: 70%" class="column"></div>
+                <div style="--column: 35%" class="column"></div>
+                <div style="--column: 55%" class="column"></div>
+                <div style="--column: 100%" class="column"></div>
+              </div>
+              <div class="statistics-column__contentBottom">
+                <div><span class="text-content">Thứ 2</span></div>
+                <div><span class="text-content">Thứ 3</span></div>
+                <div><span class="text-content">Thứ 4</span></div>
+                <div><span class="text-content">Thứ 5</span></div>
+                <div><span class="text-content">Thứ 6</span></div>
+                <div><span class="text-content">Thứ 7</span></div>
+                <div><span class="text-content">Chủ nhật</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script src="view/asset/js/main.js"></script>
+    <script>
+      app.star = function () {
+        this.openValueName();
+        // this.tabAdmin();
+        this.openCategory();
+        this.renderTextInp();
+        this.search();
+      };
+      app.star();
+    </script>
+  </body>
+</html>

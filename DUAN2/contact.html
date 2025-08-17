@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+    <!-- Favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/asset/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/asset/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/asset/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/asset/images/favicon/site.webmanifest" />
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- link map  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="/asset/scss/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-border">
+        <div class="container">
+          <div class="header-child">
+            <!-- left -->
+            <div class="header-logo">
+              <a href="#!">
+                <img src="/asset/images/logo/Logo(main) (1).png" alt="" />
+              </a>
+            </div>
+            <!-- form -->
+            <form action="" class="header-form">
+              <input
+                id="header-form__inp"
+                type="text"
+                placeholder="Tìm cái gì..."
+              />
+              <button id="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm
+              </button>
+            </form>
+            <!-- right -->
+            <div class="header-timeWork">
+              <div class="header-timeWork__items">
+                <img src="/asset/images/time-work.webp" alt="" />
+                <div class="header-timeWork__content">
+                  <p>
+                    Thời gian làm việc <br /><span>8 - 21h </span> (từ thứ 2 -
+                    Chủ nhật)
+                  </p>
+                </div>
+              </div>
+              <div class="header-timeWork__items">
+                <img src="/asset/images/free-ship.png" alt="" />
+                <div class="header-timeWork__content">
+                  <p>Tốc độc nhanh chóng</p>
+                  <img src="/asset/images/free-ship-2h.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="container">
+        <nav class="header-nav">
+          <div class="header-nav__left">
+            <div class="category-btn pointer">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Danh mục sản phẩm</span>
+            </div>
+            <div class="category openCategory">
+              <ul class="category__list height-category">
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Rau quả</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Trái cây</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Đồ khô</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Nước ép</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Salad</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Thực phẩm organic khác</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i> <span>Nấm các loại</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i> <span>Bột các loại</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span> Cam bưởi</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Rong biển</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
+          <div class="header-nav__center">
+            <ul class="header-menu">
+              <li class="header-menu__list"><a href="#!">Trang chủ</a></li>
+              <li class="header-menu__list"><a href="#!">Giới thiệu</a></li>
+              <li class="header-menu__list">
+                <a href="#!">
+                  Sản phẩm <i class="fa-solid fa-caret-down"></i
+                ></a>
+              </li>
+              <li class="header-menu__list">
+                <a href="#!">Sản phẩm khuyến mãi</a>
+              </li>
+              <li class="header-menu__list"><a href="#!">Liên hệ</a></li>
+            </ul>
+            <ul class="header-menu__arrow">
+              <li><i class="fa-solid fa-chevron-left"></i></li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <div class="header-nav__right">
+            <ul class="header-user">
+              <a href="#!">
+                <li class="header-user__list header-user__phone">
+                  <div class="header-userCircle flex-center">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <span class="tell">19006671</span>
+                </li></a
+              >
+              <a href="#!"
+                ><li class="header-user__list">
+                  <div class="header-user__cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="header-count flex-center">0</div>
+                  </div>
+                </li></a
+              >
+              <li class="header-user__list header-user__user">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="drop-account">
+                  <a href="register.html">Đăng ký</a>
+                  <a href="loggin.html">Đăng nhập</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!--  -->
+    </header>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb-bg">
+      <div class="container">
+        <ul class="breadcrumb">
+          <div class="breadcrumb-block">
+            <li><a href="#!" class="changeurl">Trang chủ</a></li>
+          </div>
+          <div class="breadcrumb-block">
+            <span class="spaceLink"
+              ><i class="fa-solid fa-angles-right"></i
+            ></span>
+            <li><a href="#!" class="changeurl">Tất cả sản phẩm</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- main -->
+    <main class="main mrSection">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <!--  -->
+            <div class="contact-shop">
+              <h2 class="groupTitle__title">
+                Khuyến mãi hấp dẫn
+                <i class="fa-solid fa-clover"></i>
+              </h2>
+              <ul class="list-content">
+                <li class="list-content__items">
+                  <div class="content-left">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="content-right">
+                    <span class="content-right__title">Địa chỉ</span>
+                    <span class="content-right__content"
+                      >Quận 12, quận 12, quận 12, TPHCM</span
+                    >
+                  </div>
+                </li>
+                <li class="list-content__items">
+                  <div class="content-left">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div class="content-right">
+                    <span class="content-right__title">Thời gian làm việc</span>
+                    <span class="content-right__content"
+                      >8h - 22h <br />
+                      Từ thứ 2 đến chủ nhật</span
+                    >
+                  </div>
+                </li>
+                <li class="list-content__items">
+                  <div class="content-left">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="content-right">
+                    <span class="content-right__title">Hotline</span>
+                    <span class="content-right__content"
+                      ><a href="#!" class="hover-link">19006671</a></span
+                    >
+                  </div>
+                </li>
+
+                <li class="list-content__items">
+                  <div class="content-left">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="content-right">
+                    <span class="content-right__title">Email</span>
+                    <span class="content-right__content"
+                      ><a href="#!" class="hover-link">support@sapo.vn</a></span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--  -->
+            <div class="contact-us">
+              <h2 class="groupTitle__title">
+                Khuyến mãi hấp dẫn
+                <i class="fa-solid fa-clover"></i>
+              </h2>
+              <!--  -->
+              <div class="contact-us__content">
+                <span
+                  >Nếu có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và
+                  chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể</span
+                >
+              </div>
+              <!--  -->
+              <form action="" class="form-contact">
+                <div class="form-group__inp">
+                  <input type="text" name="priceOld" placeholder="Họ và tên" />
+                </div>
+                <div class="form-group__inp">
+                  <input type="email" name="priceOld" placeholder="Email" />
+                </div>
+                <div class="form-group__inp">
+                  <input type="tel" name="priceOld" placeholder="Điện thoại" />
+                </div>
+                <div class="form-group__textarea">
+                  <textarea name="" id="" placeholder="Nội dung "></textarea>
+                </div>
+                <button class="form-contact__btn">Gửi thông tin</button>
+              </form>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="contact__right">
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4545033048266!2d106.62483140989632!3d10.852994236085951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1742961109288!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ======== footer ======== -->
+    <footer class="footer mrSection">
+      <div class="container">
+        <div class="footer__child">
+          <div class="footer-items">
+            <div class="footer__logo">
+              <a href="#!">
+                <img
+                  src="/asset/images/logo/Logo(main) (1).png"
+                  alt="logoweb"
+                />
+              </a>
+            </div>
+            <p class="footer__desc">
+              Chúng tôi hi vọng tất cả người tiêu dùng Việt nam sẽ được sử dụng
+              những thụ phẩm rau củ quả tươi ngon, bổ dưỡng và an toàn nhất tại
+              cửa hàng cung cấp thực phẩm rau củ sạch Organic Home.
+            </p>
+            <h4 class="footer__title footer__title2">Hình thức thanh toán</h4>
+            <div class="footer__payment">
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_1.webp"
+                  alt="Thanh toán bằng tiền mặt"
+              /></a>
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_2.webp"
+                  alt="Thanh toán bằng phương thức chuyển khoản"
+              /></a>
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_3.webp"
+                  alt="Thanh toán bằng Visa"
+              /></a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer-items">
+            <h4 class="footer__title footer__title1">Chính sách</h4>
+            <ul class="footer-listContent">
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thanh toán</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Quà tặng tri ân</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer-items footer-generalInformation">
+            <h4 class="footer__title footer__title1">Thông tin chung</h4>
+            <ul class="footer-listContent">
+              <li class="footer__itemsContent">
+                <span class="bold-text">Địa chỉ:</span> 70 Lữ Gia, Phường 15,
+                Quận 11, TP.HCM
+              </li>
+              <li class="footer__itemsContent">
+                <span class="bold-text">Điện thoại:</span> 1900545
+              </li>
+              <li class="footer__itemsContent">
+                <span class="bold-text">Email:</span> support@sapo.vn
+              </li>
+            </ul>
+            <h4 class="footer__title footer__title2">Liên kết sàn</h4>
+            <ul class="foter__social">
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/zalo.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/facebook.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/youtube.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/google.webp" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer-items">
+            <h4 class="footer__title footer__title1">Instagram</h4>
+            <ul class="footer__instagram">
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_1.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_2.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_3.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_4.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_5.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_6.webp" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="belong">
+        <span class="belong__content">Bản quyền thuộc về 3AE</span>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="/asset/js/main.js"></script>
+    <script>
+      app.star = function () {
+        this.mapContact();
+        this.openCategory();
+        this.renderTextInp();
+        this.search();
+      };
+      app.star();
+    </script>
+  </body>
+</html>

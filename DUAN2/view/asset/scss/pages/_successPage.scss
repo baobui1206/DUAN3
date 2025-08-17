@@ -1,0 +1,59 @@
+.order-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  @include mobileHorizonFixed() {
+    font-size: 1.5rem;
+  }
+  .success-tick {
+    @include flexCenter();
+    flex-direction: column;
+    row-gap: 8px;
+    &__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(to top, $primary-Color, rgb(193, 245, 88));
+      @include flexCenter();
+      i {
+        font-size: 26px;
+        color: white;
+      }
+    }
+    &__content {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: $bold-contentSemi-Bold;
+      @include mobileHorizonFixed() {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  //
+  .success-content {
+    font-weight: 420;
+    text-align: center;
+    &__info {
+      margin-top: 4px;
+    }
+    &__thank {
+      margin-top: 8px;
+    }
+  }
+  .success-contenUser {
+    margin-top: 16px;
+    @extend .success-content;
+    text-align: left;
+    &__title {
+      font-weight: $bold-contentSemi-Bold;
+    }
+    &__content {
+      margin-top: 6px;
+      line-height: 1.55;
+    }
+  }
+  .btn-continueBuy {
+    @include styleBtnPrimary();
+  }
+}

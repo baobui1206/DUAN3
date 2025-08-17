@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+}
+body {
+  font-size: $font-medium;
+  text-rendering: optimizeSpeed;
+  /* làm mịn phong chữ ở một số TD */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: $font-family;
+  background: white;
+}

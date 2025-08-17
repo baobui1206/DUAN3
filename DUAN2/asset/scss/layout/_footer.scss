@@ -1,0 +1,121 @@
+/* footer========== */
+.footer {
+  background: $secondary-Color;
+  .footer__child {
+    display: grid;
+    grid-template-columns: 4fr 2fr 3fr 3fr;
+    padding: 40px 0 32px;
+    margin: 0 -10px;
+    .footer-items {
+      padding: 0 10px;
+    }
+  }
+  .belong {
+    .belong__content {
+      padding: 12px 0;
+      display: block;
+      text-align: center;
+      font-size: $font-small;
+      color: #333;
+      font-weight: 550;
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+.footer__logo img {
+  width: auto;
+  max-height: 62px;
+}
+.footer__desc {
+  margin-top: 8px;
+  font-size: 1.3rem;
+  line-height: $lineHeight-font16;
+  font-weight: 500;
+}
+.footer__payment {
+  display: flex;
+  column-gap: 8px;
+  margin-top: $mr-block;
+  img {
+    width: auto;
+    max-height: 30px;
+  }
+}
+.footer__title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: $primary-Color;
+  font-weight: $bold-title23;
+}
+.footer__title2 {
+  margin-top: 32px;
+}
+.footer__itemsContent:not(:first-child) {
+  margin-top: $mr-content;
+}
+/* #76a713 */
+.footer-listContent {
+  margin-top: $mr-title;
+  font-weight: 450;
+}
+.bold-text {
+  font-weight: $bold-contentSemi-Bold;
+  color: $primary-Color;
+}
+.footer-listContent .footer__itemsContent a {
+  @include transition(color 0.2s linear);
+}
+.footer-listContent .footer__itemsContent a:hover {
+  color: #84b919;
+}
+.foter__social {
+  display: flex;
+  column-gap: 8px;
+  margin-top: $mr-title;
+  li {
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.footer__instagram {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $mr-title;
+  li {
+    padding: 0 4px;
+    margin-bottom: 8px;
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    a {
+      display: block;
+      position: relative;
+      border-radius: $bdradius-img;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        background: rgba(118, 167, 19, 0.3);
+        background-image: url(/asset/images/instagram-brands.svg);
+        background-position: center center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(opacity 0.1s linear, visibility 0.1s linear);
+      }
+      &:hover::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

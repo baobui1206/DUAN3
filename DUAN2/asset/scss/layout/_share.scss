@@ -1,0 +1,462 @@
+// ========== container ==========
+.container {
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.container-fluid {
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0 auto;
+  // padding: 0 16px;
+}
+.cotnainer-small {
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// =========== class Share ==========
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.hiddenUi {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.mrSection {
+  margin-top: $mr-block;
+}
+.bold-passageMedium {
+  font-weight: $bold-contentMedium;
+}
+.bold-passageSemi-Bold {
+  font-weight: $bold-contentSemi-Bold;
+}
+.bold-titleText {
+  font-weight: $bold-titleText;
+}
+
+// ============= box modal ===========
+.modal {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  @include transition(all 0.15s linear);
+}
+
+// ============ popup voucher ==================
+.popup-coupon {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  padding: 0 16px;
+  opacity: 0;
+  visibility: hidden;
+  @include transform(translate(-50%, -50%));
+  @include transition(all 0.15s linear);
+  .popup-coupon__child {
+    width: 425px;
+    border-radius: 6px;
+    overflow: hidden;
+    .coupon-top {
+      padding: 14px 12px;
+      background: $primary-Color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .coupon-top__title {
+        font-size: calc($font-small + 1px);
+        font-weight: $bold-contentMedium;
+        color: white;
+      }
+      .close-popupCoupon i {
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .coupon-bottom {
+      background: white;
+      .info {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        padding: 12px;
+        font-size: $font-small;
+        background: white;
+        &:nth-child(odd) {
+          background: rgb(247, 247, 247);
+        }
+      }
+      .info__title {
+        flex: 0 0 125px;
+        max-width: 125px;
+        font-weight: $bold-titleText;
+        color: $primary-Color;
+      }
+      // .info__content {
+      // }
+      .inner-code {
+        text-transform: uppercase;
+        font-weight: $bold-titleText;
+      }
+    }
+  }
+}
+// ======== class Js phần popup coupon ===========
+.open-popupCoupon {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+.openModal {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+//
+
+// ============== thanh điều hướng breadcrumb ==============
+.breadcrumb-bg {
+  padding: 12px 0;
+  background: #f1f6e6;
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    .breadcrumb-block {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      .spaceLink i {
+        display: block;
+        font-size: 0.8rem;
+        color: #333;
+      }
+      .changeurl {
+        color: #333;
+        font-size: $font-small;
+      }
+      &:last-child .changeurl {
+        color: #76a713;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/*=================== block sản phẩm ================== */
+.product {
+  position: relative;
+  flex: 0 0 calc((100% - ($mr-block * 4)) / 5);
+  max-width: calc((100% - ($mr-block * 4)) / 5);
+  box-shadow: 0 0 0 1px $border-product;
+  border-radius: $bdradius-product;
+  overflow: hidden;
+  &:not(:last-child) {
+    margin-right: $mr-block;
+  }
+  // ======= hover product ========
+  &:hover {
+    box-shadow: 0 0 0 2px $primary-Color;
+  }
+  &:hover .img__thumb img {
+    transform: translate(-50%, -50%) scale(1.05) !important;
+    // transform: rotate(1deg) translateY(-4px);
+  }
+  //   ====đóng hover=====
+  @include transition(box-shadow 0.2s linear);
+  &:hover .btn-Listwishlist {
+    opacity: 1;
+    @include transform(translateX(0%));
+  }
+  //   ======= 3 nút của sản phẩm ==========
+  .btn-Listwishlist {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    opacity: 0;
+    @include transition(all 0.25s linear);
+    @include transform(translateX(calc(100% + 20px)));
+
+    // transform: scale(0);
+    .btn-Listwishlist__btn {
+      a {
+        @include flexCenter();
+        width: 30px;
+        height: 30px;
+        background: white;
+        box-shadow: 0 1.6px 4.4px 0.1px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        svg {
+          width: 18px;
+          height: 18px;
+          stroke: black;
+          stroke-width: 1.6px;
+        }
+        i {
+          color: #3d3d3d;
+          font-size: 15px;
+        }
+        .reduce-icon {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  //============ giảm phần trăm ============
+  .price-minus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 95px;
+    height: 22px;
+    background: rgb(230, 53, 53);
+    color: white;
+    border-radius: $bdradius-product 0 $bdradius-product 0;
+    font-size: 1.3rem;
+    user-select: none;
+    /* z-index: -1; */
+  }
+  .product__child {
+    // ==== img product ====
+    .product__thumbnail {
+      padding: 10px;
+      .img__thumb {
+        position: relative;
+        display: block;
+        padding-top: 100%;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          //   inset: 0;
+          max-width: 100%;
+          height: auto;
+          margin: auto;
+          @include transform(translate(-50%, -50%));
+          @include transition(transform 0.25s linear);
+          will-change: transform;
+        }
+      }
+    }
+    // ======= info ==========
+    .product-info {
+      padding: 12px 10px;
+      .product__name {
+        @include clipText(2);
+        font-weight: $bold-contentMedium;
+
+        a {
+          @include transition(color 0.2s linear);
+          line-height: 1.45;
+          &:hover {
+            color: $primary-Color;
+          }
+        }
+      }
+      .product-price {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        column-gap: 8px;
+        margin-top: 8px;
+        .product-price__new {
+          font-size: 1.5rem;
+          color: $primary-Color;
+          font-weight: $bold-contentSemi-Bold;
+        }
+        .product-price__old {
+          font-size: 1.3rem;
+          text-decoration: line-through;
+          color: rgb(48, 48, 48);
+        }
+      }
+      .product-sold {
+        margin-top: 16px;
+        .sold-content {
+          display: flex;
+          justify-content: space-between;
+          font-size: calc($font-small - 2px);
+          .sold-content__right {
+            color: $primary-Color;
+            font-weight: 600;
+          }
+        }
+        .product-sold__line {
+          display: block;
+          width: 100%;
+          height: 6px;
+          border-radius: 99px;
+          background: rgb(212, 212, 212);
+          margin-top: 4px;
+          span {
+            display: block;
+            border-radius: 99px;
+            width: var(--line);
+            height: 100%;
+            background: $primary-Color;
+          }
+        }
+      }
+      .product-btnAddcart {
+        @include flexCenter();
+        column-gap: 6px;
+        width: 100%;
+        padding: 12px 0;
+        font-size: $font-small;
+        margin-top: 12px;
+        border: none;
+        background: $primary-Color;
+        color: white;
+        border-radius: 8px;
+        @include transition(background 0.15s linear);
+        cursor: pointer;
+        &:hover {
+          background: #50740a;
+        }
+      }
+    }
+  }
+}
+
+@keyframes lineProduct {
+  to {
+    width: 100%;
+    opacity: 0;
+  }
+  from {
+    width: 0%;
+    opacity: 1;
+  }
+}
+// ================== đóng block product =============
+
+// ============ block tạm tính chung ===========
+.block-totalShip {
+  padding: 15px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  .ship {
+    margin-top: 10px;
+  }
+  .total,
+  .ship,
+  .voucher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .total-line__name {
+    font-size: $font-small;
+    font-weight: 500;
+  }
+  .total-line__price {
+    font-size: calc($font-small + 1px);
+    font-weight: $bold-titleText;
+  }
+}
+
+// =============== block mã khuyến mãi chung ===========
+.discount-code {
+  .block-code {
+    position: relative;
+    margin-top: $mr-block16;
+    padding: 6px;
+    border: 2px solid $border-green;
+    border-radius: 5px;
+    .info-btn {
+      position: absolute;
+      right: 8px;
+      top: 6px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      @include flexCenter();
+      border: 1px solid $border-green;
+      background-color: transparent;
+      cursor: pointer;
+      i {
+        font-size: 1.2rem;
+        color: $text-green;
+      }
+    }
+    .blockCode-top {
+      > :first-child {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      > :last-child {
+        margin-top: 3px;
+        font-size: 1.2rem;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .blockCode-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    span {
+      display: block;
+      font-size: 1.2rem;
+      color: $text-green;
+      font-weight: 500;
+    }
+    .blockCode-bottom__btn {
+      color: white;
+      background: $bg-btn;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// ========= button control product =============
+.button-control {
+  display: flex;
+  column-gap: 4px;
+  .btn-control__prev,
+  .btn-control__next {
+    @include styleBtnArrow();
+    @include flexCenter();
+  }
+  .active-btn {
+    background: $primary-Color;
+  }
+}
+
+// hover
+.hover-link:hover {
+  color: $text-green;
+}

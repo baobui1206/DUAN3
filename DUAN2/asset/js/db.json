@@ -1,0 +1,16 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "iphone 16 promax",
+      "price": "200.000.000k",
+      "desc": "ihone siêu cấp vip bờ rồ"
+    },
+    {
+      "id": 2,
+      "name": "iphone 5 promax",
+      "price": "30.000.000k",
+      "desc": "iphone 5 siêu cấp vip bờ rồ"
+    }
+  ]
+}

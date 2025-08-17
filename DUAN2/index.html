@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Home</title>
+    <!-- Favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/asset/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/asset/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/asset/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/asset/images/favicon/site.webmanifest" />
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="/asset/scss/main.css" />
+    <script src="/asset/js/node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1 style="display: none">
+      Organic Home chuyên cung cấp rau sạch xanh và không thuốc men
+    </h1>
+    <!-- ======== header ======== -->
+    <header class="header">
+      <div class="header-border">
+        <div class="container">
+          <div class="header-child">
+            <!-- left -->
+            <div class="header-logo">
+              <a href="#!">
+                <img
+                  src="/asset/images/logo/Logo(main) (1).png"
+                  alt="logo"
+                  title="Organic Home"
+                />
+              </a>
+            </div>
+            <!-- form -->
+            <form action="" class="header-form">
+              <input
+                id="header-form__inp"
+                type="text"
+                placeholder="Tìm cái gì..."
+              />
+              <button id="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm
+              </button>
+            </form>
+            <!-- right -->
+            <div class="header-timeWork">
+              <div class="header-timeWork__items">
+                <img src="/asset/images/time-work.webp" alt="" />
+                <div class="header-timeWork__content">
+                  <p>
+                    Thời gian làm việc <br /><span>8 - 21h </span> (từ thứ 2 -
+                    Chủ nhật)
+                  </p>
+                </div>
+              </div>
+              <div class="header-timeWork__items">
+                <img src="/asset/images/free-ship.png" alt="" />
+                <div class="header-timeWork__content">
+                  <p>Tốc độc nhanh chóng</p>
+                  <img src="/asset/images/free-ship-2h.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="container">
+        <nav class="header-nav">
+          <div class="header-nav__left">
+            <div class="category-btn">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Danh mục sản phẩm</span>
+            </div>
+          </div>
+          <!--  -->
+          <div class="header-nav__center">
+            <ul class="header-menu">
+              <li class="header-menu__list"><a href="#!">Trang chủ</a></li>
+              <li class="header-menu__list"><a href="#!">Giới thiệu</a></li>
+              <li class="header-menu__list">
+                <a href="#!">
+                  Sản phẩm <i class="fa-solid fa-caret-down"></i
+                ></a>
+              </li>
+              <li class="header-menu__list">
+                <a href="#!">Sản phẩm khuyến mãi</a>
+              </li>
+              <li class="header-menu__list"><a href="#!">Liên hệ</a></li>
+            </ul>
+            <ul class="header-menu__arrow">
+              <li><i class="fa-solid fa-chevron-left"></i></li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <div class="header-nav__right">
+            <ul class="header-user">
+              <a href="#!">
+                <li class="header-user__list header-user__phone">
+                  <div class="header-userCircle flex-center">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <span class="tell">0982746987</span>
+                </li></a
+              >
+              <a href="#!"
+                ><li class="header-user__list">
+                  <div class="header-user__cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="header-count flex-center">0</div>
+                  </div>
+                </li></a
+              >
+              <li class="header-user__list header-user__user">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="drop-account">
+                  <a href="register.html">Đăng ký</a>
+                  <a href="loggin.html">Đăng nhập</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!--  -->
+      <!--  -->
+      <section class="section-menuSlider">
+        <div class="container">
+          <div class="category-slider">
+            <div class="category">
+              <ul class="category__list">
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Rau quả</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Trái cây</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Đồ khô</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Nước ép</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Salad</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Thực phẩm organic khác</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i> <span>Nấm các loại</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i> <span>Bột các loại</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span> Cam bưởi</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Rong biển</span>
+                  </a>
+                </li>
+                <li class="category__items">
+                  <a href="#!">
+                    <i class="fa-solid fa-leaf"></i><span>Rong biển</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- slider -->
+            <div class="slider">
+              <!-- list banner -->
+              <div class="slider__listImg">
+                <!--  -->
+                <div class="slider__img">
+                  <a href="#!"
+                    ><img src="/asset/images/banner/Banner sale.png" alt=""
+                  /></a>
+                </div>
+                <div class="slider__img">
+                  <a href="#!"
+                    ><img
+                      src="/asset/images/banner/Banner qc sp (1).png"
+                      alt=""
+                  /></a>
+                </div>
+                <!--  -->
+              </div>
+              <!-- control -->
+              <div class="slider-control">
+                <button class="slider-control__btnLeft flex-center">
+                  <i class="fa-solid fa-chevron-left"></i></button
+                ><button class="slider-control__btnRight flex-center">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!--  -->
+    <section class="section-2banner mrSection">
+      <div class="container">
+        <div class="hero-image">
+          <div class="hero-image__img">
+            <a href="#!"
+              ><img
+                src="/asset/images/z6446437113634_02be6ac74631c1bdac2d727bdcbe75d1.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="hero-image__img">
+            <a href="#!"
+              ><img src="/asset/images/two_banner_image_2.webp" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== main ======== -->
+    <main class="main mrSection">
+      <section class="section-productFlashSale">
+        <div class="container">
+          <div class="flashSale" id="tabSale1" data-contentSale>
+            <!--  -->
+            <div class="flashSale-top">
+              <!-- tab  -->
+              <div class="tab-flashSale">
+                <button class="tab-flashSale__btn active-tabSale">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                    />
+                  </svg>
+                  Sản phẩm hấp dẫn</button
+                ><button
+                  class="tab-flashSale__btn hover-tabSale"
+                  data-targetSale="tabSale2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+
+                  Sản phẩm đặc biệt
+                </button>
+              </div>
+              <!-- time  -->
+              <div class="groupTitle-time">
+                <span class="groupTitle-time__title">
+                  <img src="/asset/images/flash.svg" alt="icon flash sale" />
+                  Flash Sale
+                </span>
+                <div class="groupTitle-time__child">
+                  <div class="blockTime">
+                    <span class="blockTime__time">10</span>
+                    <span class="blockTime__content">Ngày</span>
+                  </div>
+                  <span class="colon-time">:</span>
+                  <div class="blockTime">
+                    <span class="blockTime__time">09</span>
+                    <span class="blockTime__content">Giờ</span>
+                  </div>
+                  <span class="colon-time">:</span>
+                  <div class="blockTime">
+                    <span class="blockTime__time">40</span>
+                    <span class="blockTime__content">Phút</span>
+                  </div>
+                  <span class="colon-time">:</span>
+                  <div class="blockTime">
+                    <span class="blockTime__time">44</span>
+                    <span class="blockTime__content">Giây</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- product -->
+            <div class="product-flashSale">
+              <!--product  -->
+              <div class="product" data-salesQuantity="20">
+                <span class="price-minus flex-center">Giảm 10%</span>
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/buoi-da-xanh-trai-tu-17kg-tro-len-202205111921599930.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <!-- <i class="fas fa-fire"></i>
+                      <i class="fas fa-star"></i> -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--đóng  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/dua-luoi-huynh-long-trai-14-16kg-202304060829170566.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/tao-gala-mini-nhap-khau-new-zealand-hop-1kg-8-11-trai-202205111944149237.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <div class="text-center">
+              <a href="#!" class="btn-seeAll"
+                ><span>Xem tất cả</span><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- =============== tab 2 ============ -->
+          <div
+            class="flashSale none-contentTabSale"
+            id="tabSale2"
+            data-contentSale
+          >
+            <!--  -->
+            <div class="flashSale-top">
+              <!-- tab  -->
+              <div class="tab-flashSale">
+                <button
+                  class="tab-flashSale__btn hover-tabSale"
+                  data-targetSale="tabSale1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                    />
+                  </svg>
+                  Sản phẩm hấp dẫn</button
+                ><button class="tab-flashSale__btn active-tabSale">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+
+                  Sản phẩm đặc biệt
+                </button>
+              </div>
+            </div>
+
+            <!-- product -->
+            <div class="product-flashSale">
+              <!--product  -->
+              <div class="product" data-salesQuantity="20">
+                <span class="price-minus flex-center">Giảm 10%</span>
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--đóng  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="product" data-salesQuantity="20">
+                <!-- btn sản phẩm -->
+                <ul class="btn-Listwishlist">
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"
+                      ><i class="fa-solid fa-magnifying-glass reduce-icon"></i>
+                    </a>
+                  </li>
+                  <li class="btn-Listwishlist__btn">
+                    <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+                <!-- đóng btn sản phẩm -->
+                <span class="price-minus flex-center">Giảm 10%</span>
+
+                <div class="product__child">
+                  <div class="product__thumbnail">
+                    <a href="product-detail.html" class="img__thumb">
+                      <img
+                        src="/asset/images/product/rong-bien-nau-canh-ottogi-goi-20g-202304140929362247.webp"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- info product -->
+                  <div class="product-info">
+                    <h3 class="product__name">
+                      <a href="product-detail.html">
+                        Rong biển nấu canh Ottogi gói 20g
+                      </a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="product-price__new"> 21.000₫</span>
+                      <span class="product-price__old">27.000₫</span>
+                    </div>
+                    <!--  -->
+                    <div class="product-sold">
+                      <div class="sold-content">
+                        <span class="sold-content__left"
+                          >Đã bán
+                          <span class="bold-passageSemi-Bold">101</span></span
+                        >
+                        <span class="sold-content__right">55%</span>
+                      </div>
+                      <div class="product-sold__line">
+                        <span style="--line: 55%"></span>
+                      </div>
+                    </div>
+                    <!-- btn  -->
+                    <button class="product-btnAddcart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Thêm vào giỏ </span>
+                    </button>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!--  -->
+            </div>
+
+            <div class="text-center">
+              <a href="#!" class="btn-seeAll"
+                ><span>Xem tất cả</span><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-service mrSection">
+        <div class="container">
+          <div class="service">
+            <!--  -->
+            <div class="groupTitle-index">
+              <div>
+                <h2 class="groupTitle__title">
+                  Dịch vụ đặc biệt của chúng tôi
+                  <i class="fa-solid fa-clover"></i>
+                </h2>
+                <p class="groupTitle__content">
+                  Những dịch vụ tốt nhất dành cho khách hàng của chúng tôi
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="service-list">
+              <div class="service-items">
+                <img
+                  src="/asset/images/chungToi/dichvu_1.webp"
+                  alt=""
+                  class="service__img"
+                />
+                <h3 class="service__title">Rau hữu cơ</h3>
+                <p class="service__content">
+                  Được trồng theo phương pháp hiện đại nhất, đạt tiêu chuẩn quốc
+                  tế, vô cùng an toàn khi sử dụng.
+                </p>
+                <!-- <div class="text-center learn-more">
+                  <a href="#!" class="btn-primary">Tìm hiểu thêm</a>
+                </div> -->
+              </div>
+              <div class="service-items">
+                <img
+                  src="/asset/images/chungToi/dichvu_2.webp"
+                  alt=""
+                  class="service__img"
+                />
+                <h3 class="service__title">Giao hàng nhanh chóng</h3>
+                <p class="service__content">
+                  Giao hàng trong thời gian nhanh nhất để đảm bảo chất lượng tốt
+                  nhất cho những sản phẩm bạn đã đặt.
+                </p>
+                <!-- <div class="text-center learn-more">
+                  <a href="#!" class="btn-primary">Tìm hiểu thêm</a>
+                </div> -->
+              </div>
+              <div class="service-items">
+                <img
+                  src="/asset/images/chungToi/dichvu_3.webp"
+                  alt=""
+                  class="service__img"
+                />
+                <h3 class="service__title">Thanh toán dễ dàng</h3>
+                <p class="service__content">
+                  Nhiều hình thức thanh toán làm cho việc đặt hàng của bạn và
+                  shop trở nên dễ dàng và tiện lợi hơn rất nhiều.
+                </p>
+                <!-- <div class="text-center learn-more">
+                  <a href="#!" class="btn-primary">Tìm hiểu thêm</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-productVegetable mrSection">
+        <div class="container">
+          <!--  -->
+          <div class="container-product">
+            <div class="product-imgleft">
+              <a href="#!">
+                <img
+                  src="/asset/images/product/img-leftProduct/image_product1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="product-vegetable">
+              <!--  -->
+              <div class="groupTitle-index">
+                <div class="groupTitle">
+                  <a href="#!"
+                    ><h2 class="groupTitle__title">
+                      Rau củ
+                      <i class="fa-solid fa-clover"></i></h2
+                  ></a>
+                </div>
+                <!--  -->
+                <!-- <div class="button-control">
+                  <div class="btn-control__prev flex-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div class="btn-control__next flex-center">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div> -->
+              </div>
+              <!--  -->
+              <div class="vegetable">
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <span class="price-minus flex-center">Giảm 10%</span>
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/rau-den-4kfarm-goi-500g-202205181556012255.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/rau-muong-4kfarm-goi-500g-202205181558265317.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/cai-ngot-4kfarm-goi-500g-202205201658308311-9a2fdd21-4c4c-4f5e-bf94-befbb568acfe.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <span class="price-minus flex-center">Giảm 41%</span>
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/ca-rot-da-lat-tui-500g-2-5-cu-202205201603295625.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 10.000₫</span>
+                        <span class="product-price__old">16.900₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="text-center">
+                <a href="#!" class="btn-seeAll"
+                  ><span>Xem tất cả</span
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-3banner mrSection">
+        <div class="container">
+          <div class="hero-image3img">
+            <div class="hero-image__img3">
+              <a href="#!" class="hero-image__hover">
+                <img
+                  src="/asset/images/banner/hero-img/banner_three_1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="hero-image__img3">
+              <a href="#!" class="hero-image__hover">
+                <img
+                  src="/asset/images/banner/hero-img/banner_three_2.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="hero-image__img3">
+              <a href="#!" class="hero-image__hover">
+                <img
+                  src="/asset/images/banner/hero-img/banner_three_3.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-productFruit mrSection">
+        <div class="container">
+          <!--  -->
+          <div class="container-product">
+            <div class="product-imgleft">
+              <a href="#!">
+                <img
+                  src="/asset/images/product/img-leftProduct/image_product2.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!--  -->
+            <div class="product-fruit">
+              <div class="groupTitle-index">
+                <div class="groupTitle">
+                  <a href="#!"
+                    ><h2 class="groupTitle__title">
+                      Trái cây
+                      <i class="fa-solid fa-clover"></i></h2
+                  ></a>
+                </div>
+                <!--  -->
+                <!-- <div class="button-control">
+                  <div class="btn-control__prev flex-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div class="btn-control__next flex-center">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div> -->
+              </div>
+
+              <!--  -->
+              <div class="fruit">
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/xoai-dai-loan-trai-tu-600g-202301090855096013.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <span class="price-minus flex-center">Giảm 5%</span>
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/dua-luoi-huynh-long-trai-14-16kg-202304060829170566.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 113.000₫</span>
+                        <span class="product-price__old">119.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/cam-sanh-vat-nuoc-tui-3kg-18-24-trai-202302151630579167.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <span class="price-minus flex-center">Giảm 11%</span>
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/buoi-da-xanh-trai-tu-17kg-tro-len-202205111921599930 (1).webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 80.100₫</span>
+                        <span class="product-price__old">90.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="text-center">
+                <a href="#!" class="btn-seeAll"
+                  ><span>Xem tất cả</span
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-1banner mrSection">
+        <div class="container">
+          <div class="hero-image1img">
+            <a href="#!" class="hero-image__hover">
+              <img src="/asset/images/banner/hero-img/banner.webp" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-dryGoods mrSection">
+        <div class="container">
+          <!--  -->
+          <div class="container-product">
+            <div class="product-imgleft">
+              <a href="#!">
+                <img
+                  src="/asset/images/product/img-leftProduct/image_product3.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!--  -->
+            <div class="product-dryGoods">
+              <div class="groupTitle-index">
+                <div class="groupTitle">
+                  <a href="#!"
+                    ><h2 class="groupTitle__title">
+                      Đồ khô
+                      <i class="fa-solid fa-clover"></i></h2
+                  ></a>
+                </div>
+                <!--  -->
+                <!-- <div class="button-control">
+                  <div class="btn-control__prev flex-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div class="btn-control__next flex-center">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div> -->
+              </div>
+              <!--  -->
+              <div class="dryGoods">
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/lac-cuc-do-ly-tuong-goi-400g-202208170859346002.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/nam-huong-kho-viet-san-goi-250g-201812121505346643.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/dau-phong-viet-san-500g-201812111146444694.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Rong biển nấu canh Ottogi gói 20g
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 21.000₫</span>
+                        <span class="product-price__old">27.000₫</span>
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="product" data-salesQuantity="20">
+                  <!-- btn sản phẩm -->
+                  <ul class="btn-Listwishlist">
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"
+                        ><i
+                          class="fa-solid fa-magnifying-glass reduce-icon"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="btn-Listwishlist__btn">
+                      <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                  </ul>
+                  <!-- đóng btn sản phẩm -->
+                  <!-- <span class="price-minus flex-center">Giảm 10%</span> -->
+
+                  <div class="product__child">
+                    <div class="product__thumbnail">
+                      <a href="product-detail.html" class="img__thumb">
+                        <img
+                          src="/asset/images/product/gao-thom-dac-san-neptune-st25-tui-5kg-202303010822397005.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- info product -->
+                    <div class="product-info">
+                      <h3 class="product__name">
+                        <a href="product-detail.html">
+                          Gạo thơm đặc sản Neptune ST25 túi 5kg
+                        </a>
+                      </h3>
+                      <div class="product-price">
+                        <span class="product-price__new"> 229.000₫</span>
+                        <!-- <span class="product-price__old">27.000₫</span> -->
+                      </div>
+                      <div class="product__line hiddenUi"></div>
+                      <span class="product__sold hiddenUi">Đã bán 101</span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="text-center">
+                <a href="#!" class="btn-seeAll"
+                  ><span>Xem tất cả</span
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-1banner mrSection">
+        <div class="container">
+          <div class="hero-image1img">
+            <a href="#!" class="hero-image__hover">
+              <img src="/asset/images/banner/hero-img/banner2.webp" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section-productCategory mrSection">
+        <div class="container">
+          <div class="productCategory">
+            <!--  -->
+            <div class="category__items">
+              <div class="groupTitle-index">
+                <div>
+                  <h2 class="groupTitle__title">
+                    Nước ép
+                    <i class="fa-solid fa-clover"></i>
+                  </h2>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html"
+                      >6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!">
+                          <i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html"
+                      >6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!">
+                          <i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"> <i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category__items">
+              <div class="groupTitle-index">
+                <div>
+                  <h2 class="groupTitle__title">
+                    Salad
+                    <i class="fa-solid fa-clover"></i>
+                  </h2>
+                </div>
+              </div>
+
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html">
+                      6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"> <i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html"
+                      >6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category__items">
+              <div class="groupTitle-index">
+                <div>
+                  <h2 class="groupTitle__title">
+                    Thực phẩm khác
+                    <i class="fa-solid fa-clover"></i>
+                  </h2>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html"
+                      >6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!">
+                          <i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="product">
+                <div class="product__thumbnail">
+                  <a href="product-detail.html" class="product__thumb">
+                    <img
+                      src="/asset/images/product/6-hop-nuoc-dua-xiem-xanh-cocoxim-1-lit-202104081023172228.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <!--  -->
+                <div class="product-info">
+                  <h3 class="product__name">
+                    <a href="product-detail.html"
+                      >6 hộp nước dừa xiêm xanh Cocoxim 1 lít</a
+                    >
+                  </h3>
+                  <div>
+                    <div class="product-price">
+                      <div class="product-price__new">21.000₫</div>
+                      <div class="product-price__old">27.000₫</div>
+                    </div>
+                    <div class="product-listBtn">
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-basket-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                      </div>
+                      <div class="product__btn">
+                        <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======== footer ======== -->
+    <footer class="footer mrSection">
+      <div class="container">
+        <div class="footer__child">
+          <div class="footer-items">
+            <div class="footer__logo">
+              <a href="#!">
+                <img
+                  src="/asset/images/logo/Logo(main) (1).png"
+                  alt="logoweb"
+                />
+              </a>
+            </div>
+            <p class="footer__desc">
+              Chúng tôi hi vọng tất cả người tiêu dùng Việt nam sẽ được sử dụng
+              những thụ phẩm rau củ quả tươi ngon, bổ dưỡng và an toàn nhất tại
+              cửa hàng cung cấp thực phẩm rau củ sạch Organic Home.
+            </p>
+            <h4 class="footer__title footer__title2">Hình thức thanh toán</h4>
+            <div class="footer__payment">
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_1.webp"
+                  alt="Thanh toán bằng tiền mặt"
+              /></a>
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_2.webp"
+                  alt="Thanh toán bằng phương thức chuyển khoản"
+              /></a>
+              <a href="#!"
+                ><img
+                  src="/asset/images/footer/payment_3.webp"
+                  alt="Thanh toán bằng Visa"
+              /></a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer-items">
+            <h4 class="footer__title footer__title1">Chính sách</h4>
+            <ul class="footer-listContent">
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thanh toán</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Chính sách thành viên</a>
+              </li>
+              <li class="footer__itemsContent">
+                <a href="#!">Quà tặng tri ân</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer-items footer-generalInformation">
+            <h4 class="footer__title footer__title1">Thông tin chung</h4>
+            <ul class="footer-listContent">
+              <li class="footer__itemsContent">
+                <span class="bold-text">Địa chỉ:</span> 70 Lữ Gia, Phường 15,
+                Quận 11, TP.HCM
+              </li>
+              <li class="footer__itemsContent">
+                <span class="bold-text">Điện thoại:</span> 1900545
+              </li>
+              <li class="footer__itemsContent">
+                <span class="bold-text">Email:</span> support@sapo.vn
+              </li>
+            </ul>
+            <h4 class="footer__title footer__title2">Liên kết sàn</h4>
+            <ul class="foter__social">
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/zalo.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/facebook.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/youtube.webp" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="/asset/images/footer/google.webp" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer-items">
+            <h4 class="footer__title footer__title1">Instagram</h4>
+            <ul class="footer__instagram">
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_1.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_2.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_3.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_4.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_5.webp" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="/asset/images/footer/image_ins_6.webp" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="belong">
+        <span class="belong__content">Bản quyền thuộc về 3AE</span>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="/asset/js/main.js"></script>
+    <!-- chạy hàm  -->
+    <script>
+      app.star = function () {
+        // this.search();
+        this.renderTextInp();
+        this.renderData();
+        // // this.renderProduct(1, ".section-1banner"); // đóng cái này
+        this.openContentSale();
+        this.preSlider();
+        this.nextSlider();
+        intervalSlider = setInterval(() => this.autoRun(), timeRun);
+        this.search();
+      };
+      app.star();
+    </script>
+  </body>
+</html>
